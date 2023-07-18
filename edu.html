@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <h2 class="logo">
+            Portfolio
+        </h2>
+        <ul>
+            
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="edu.html">Education & Skills</a></li>
+            <li><a href="contact.html">Contact Me</a></li> 
+            
+        </ul>
+        <a href="https://youtube.com/@nivedithapk7988" class="btn">Subscribe</a>
+    </nav>
+    <section class="edu">
+       
+    <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills </p>
+        <p class="tab-links" onclick="opentab('Education')">Education</p>
+    </div>
+    <div class="tab-contents active-tab" id="skills">
+        <ul>
+            <span class="heading">HTML       </span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star"></span>
+        </ul><br>
+        <ul>
+            <span class="heading">JAVA       </span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star"></span>
+        </ul><br>
+        <ul>
+            <span class="heading">SQL        </span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+        </ul><br>
+        <ul>
+            <span class="heading">D V          </span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+        </ul><br>
+        <ul>
+            <span class="heading">Python           </span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star"></span>
+        </ul>
+    </div>
+    <div class="tab-contents" id="Education">
+        <div class="main-div">
+        
+            <div class="box">
+                <div class="card">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <h5  class="text1">Bachelor of Science in Mathematics</h5>
+                    <div class="pra">
+                        <p>Don Bosco Arts and Science College<br>Angadikadavu, Iritty<br>2018-2021<br><span>Percentage::83.21%</span></p>
+                        <p style="text-align: center;"></p>
+                        
+                    </div>
+                </div>
+             
+              <div class="card">
+                <i class="fa-solid fa-school"></i>
+                <h5 class="text1">XII Grade</h5>
+                <div class="pra">
+                    <p>Sree Narayana Vidya Mandir Senior Secondary School<br>Talap, Kannur<br>2018<br><span>Percentage::81.60%</span></p>
+                    <p style="text-align: center;"></p>
+                    
+                </div>
+              </div>
+              <div class="card">
+                <i class="fa-solid fa-school"></i>
+                <h5  class="text1">X Grade</h5>
+                <div class="pra">
+                    <p>Sree Narayana Vidya Mandir Senior Secondary School<br>Talap, Kannur<br>2016<br><span>Percentage::91.20%</span></p>
+                    <p style="text-align: center;"></p>
+                    
+                </div>
+            </div> 
+    </div>
+    </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+             for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+             }
+             for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+             }
+             event.currentTarget.classList.add("active-link")
+             document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    </section>
+</body>
+</html>
